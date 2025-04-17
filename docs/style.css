@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Kanit';
+  src: url('/fonts/Kanit-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('/fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('/fonts/Kanit-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --color-slate-50: oklch(98.4% 0.003 247.858);
   --color-slate-100: oklch(96.8% 0.007 247.896);
@@ -5,11 +26,26 @@
   --border-radius: 0.3rem;
 }
 
+html {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  padding: 1rem;
+  margin: auto;
+  max-width: 36rem;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
 button {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  font-style: normal;
   color: black;
   border: none;
   background: transparent;
@@ -34,42 +70,6 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-@font-face {
-  font-family: 'Kanit';
-  src: url('/fonts/Kanit-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kanit';
-  src: url('/fonts/Kanit-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kanit';
-  src: url('/fonts/Kanit-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-body {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  padding: 1rem;
-  margin: auto;
-  max-width: 36rem;
-}
-
-hr {
-  background: var(--color-slate-50);
-  border: none;
-  height: 0.1rem;
 }
 
 .highlight {
@@ -104,6 +104,8 @@ hr {
   gap: 0.5rem;
   background-color: var(--color-slate-100);
   transition: background-color 0.3s ease;
+  font-size: 1rem;
+  color: black;
 }
 
 .btn:hover {
