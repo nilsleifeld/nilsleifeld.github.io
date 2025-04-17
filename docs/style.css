@@ -232,3 +232,28 @@ section h2 {
   width: 2rem;
   height: 2rem;
 }
+
+/* ############ Projects ############ */
+/* ############ Avatar ############ */
+.avatar {
+  z-index: 10;
+  --size: 5rem;
+  position: fixed;
+  top: 0;
+  left: -1.5rem;
+  width: var(--size);
+  width: var(--size);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(65deg);
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover img {
+  transform: translateX(-200%);
+}
+
+/* ############ Avatar ############ */
