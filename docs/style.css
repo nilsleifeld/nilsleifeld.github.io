@@ -216,6 +216,7 @@ section h2 {
   border-radius: var(--border-radius);
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: var(--color-slate-100);
   aspect-ratio: 1 / 1;
   transition: background-color 0.3s ease;
