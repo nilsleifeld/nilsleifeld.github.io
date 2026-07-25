@@ -30,10 +30,23 @@
     />
 
     <link href="/style.css" rel="stylesheet" />
+
+    <script
+      defer
+      data-domain="nilsleifeld.de"
+      src="https://plausible.nilsleifeld.de/js/script.outbound-links.pageview-props.tagged-events.js"
+    ></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
   </head>
 
   <body>
-    <section class="hero">
+    <section id="hero" class="hero">
       <h1>Hey, I'm <span class="highlight">Nils</span><br /><span class="gradient-text">Fullstack Developer.</span></h1>
 
       <div class="actions">
@@ -74,10 +87,18 @@
       </p>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>Projects</h2>
       <div class="list">
-        <a class="project" href="https://github.com/nilsleifeld/biblevector" target="_blank">
+        <a
+          class="project"
+          href="https://github.com/nilsleifeld/biblevector"
+          target="_blank"
+          data-project="BibleVector"
+          data-language="Go"
+          data-framework="lit"
+          data-category="Tool"
+        >
           <h3>BibleVector</h3>
           <p>
             With BibleVector, you can explore Bible passages in a whole new way. Thanks to the modern vector search, you
@@ -97,7 +118,15 @@
             </li>
           </ul>
         </a>
-        <a class="project" href="https://github.com/nilsleifeld/vanilla-spa" target="_blank">
+        <a
+          class="project"
+          href="https://github.com/nilsleifeld/vanilla-spa"
+          target="_blank"
+          data-project="Vanilla SPA"
+          data-language="JavaScript"
+          data-framework="lit"
+          data-category="Demo"
+        >
           <h3>Vanilla SPA</h3>
           <p>
             This Project demonstrates how to build a Single Page Application (SPA) with minimal dependencies and without
@@ -110,7 +139,15 @@
             </li>
           </ul>
         </a>
-        <a class="project" href="https://github.com/nilsleifeld/fixyourmoney.space" target="_blank">
+        <a
+          class="project"
+          href="https://github.com/nilsleifeld/fixyourmoney.space"
+          target="_blank"
+          data-project="FixYourMoney"
+          data-language="JavaScript"
+          data-framework="Hugo"
+          data-category="Website"
+        >
           <h3>FixYourMoney</h3>
           <p>
             The website allows you to compare the price development of currencies and assets in different units of
@@ -129,60 +166,78 @@
       </div>
     </section>
 
-    <section class="tech">
+    <section id="tech" class="tech">
       <h2>Tech</h2>
       <ul class="list">
         <li>
-          <a class="item" href="https://go.dev/" target="_blank">
+          <a class="item" href="https://go.dev/" target="_blank" data-technology="Golang" data-type="language">
             <img src="/icons/golang.svg" />
             <span>Golang</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://dotnet.microsoft.com/en-us/" target="_blank">
+          <a
+            class="item"
+            href="https://dotnet.microsoft.com/en-us/"
+            target="_blank"
+            data-technology="dotnet"
+            data-type="framework"
+          >
             <img src="/icons/dotnet.svg" />
             <span>dotnet</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://lit.dev/" target="_blank">
+          <a class="item" href="https://lit.dev/" target="_blank" data-technology="lit" data-type="framework">
             <img src="/icons/lit.svg" />
             <span>lit</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://react.dev/" target="_blank">
+          <a class="item" href="https://react.dev/" target="_blank" data-technology="React" data-type="framework">
             <img src="/icons/react.svg" />
             <span>React</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://angular.dev/" target="_blank">
+          <a class="item" href="https://angular.dev/" target="_blank" data-technology="Angular" data-type="framework">
             <img src="/icons/angular.svg" />
             <span>Angular</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://tailwindcss.com/" target="_blank">
+          <a
+            class="item"
+            href="https://tailwindcss.com/"
+            target="_blank"
+            data-technology="tailwindcss"
+            data-type="framework"
+          >
             <img src="/icons/tailwindcss.svg" />
             <span>tailwindcss</span>
           </a>
         </li>
 
         <li>
-          <a class="item" href="https://developer.mozilla.org/de/docs/Web/API/Web_components" target="_blank">
+          <a
+            class="item"
+            href="https://developer.mozilla.org/de/docs/Web/API/Web_components"
+            target="_blank"
+            data-technology="Web Components"
+            data-type="framework"
+          >
             <img src="/icons/web-components.svg" />
             <span>Web Components</span>
           </a>
         </li>
 
         <li>
-          <a class="item" target="_blank">
+          <a class="item" target="_blank" data-technology="Linux" data-type="tool">
             <img src="/icons/linux.svg" />
             <span>Linux</span>
           </a>

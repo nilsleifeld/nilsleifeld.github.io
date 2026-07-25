@@ -1,3 +1,7 @@
+import { initAnalytics } from './analytics/index.js';
+
+initAnalytics();
+
 const mailBtn = document.querySelector('#mail-btn');
 if (!mailBtn) {
   throw new Error('Mail button not found');
