@@ -233,7 +233,38 @@ section h2 {
   height: 2rem;
 }
 
-/* ############ Projects ############ */
+/* ############ Tech ############ */
+/* ############ Dotfiles ############ */
+
+.dotfiles .teaser {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-slate-100);
+  transition: background-color 0.3s ease;
+}
+
+.dotfiles .teaser:hover {
+  background-color: var(--color-slate-200);
+}
+
+.dotfiles .teaser h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.dotfiles .teaser .cta {
+  font-weight: normal;
+  background-image: linear-gradient(to right, #6366f1, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ############ Dotfiles ############ */
 /* ############ Avatar ############ */
 .avatar {
   z-index: 10;
